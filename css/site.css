@@ -3,10 +3,12 @@
     --secondary-color: #ff993b;
     --dark-color: #292929;
     --white-color: #dff3e4;
+    --background-color: #
 }
 
 body{
     color: var(--dark-color);
+    background-color: var()
 }
 
 nav{
@@ -18,7 +20,25 @@ footer{
 }
 
 h1,h2,h3,h4,h5,h6{
-    color: var(--primary-color);
+    color: #12ccf6;
+}
+
+.lead {
+    color: #12ccf6;
+    font-weight: bolder;
+}
+
+.Fizz{
+    color: #12ccf6;
+}
+
+.Buzz{
+    color: #16505d;
+}
+
+.FizzBuzz{
+    color: #ff001b;
+    font-weight: 400;
 }
 
 main>.container {
@@ -35,14 +55,27 @@ footer{
     padding-right: 1rem;
 }
 
+li>a{
+    color: black !important;
+}
+
+.redit{
+    color: #ff001b;
+    font-weight: bold;
+}
+
+li>a:hover{
+    color: #ff001b !important;
+}
+
 footer .social>a{
-    color: var(--white-color);
+    color: var(--dark-color);
     opacity: .75;
 }
 
 footer .social>a:hover{
     opacity: .9;
-    color: var(--secondary-color);
+    color: #ff001b;
 }
 
 .hundred{
@@ -69,7 +102,7 @@ footer .social>a:hover{
 }
 
 .checklist >li i{
-    color: var(--secondary-color);
+    color: #ff001b;
 }
 
 code[class*="language-"],
@@ -77,4 +110,37 @@ code[class*="language-"],
         white-space: pre-wrap;
         word-break: break-all;
         word-wrap: break-word;
+}
+
+.btn{
+    background-color: #ff001b;
+    color: white;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #12ccf6;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button {
+    transition-duration: 0.4s;
+    background-color: #ff001b;
+    color: white;
+  }
+  
+.button:hover {
+    background-color: #3fd7fa;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.color{
+    background-color: #3fd7fa;
+    color: black;
+}
+
+.className, .className2{
+    color: red;
 }

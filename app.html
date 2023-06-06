@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <title>A Coding Project M Lucca</title>
+    <title>FIZZER: A Coding Project by M Lucca</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -27,15 +27,15 @@
 
   <body class="d-flex flex-column h-100">
     <!-- ---- NAV SECTION ---- -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md color fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand logoFont" href="#"
           ><img
-            src="img/Color logo - no background.svg"
+            src="img/Black logo - no background.svg"
             class="d-inline-block align-text-top"
-            width="42"
-            height="36"
-          />APP NAME</a
+            width="26"
+            
+          /><span class="redit">FIZZER</span></a
         >
         <button
           class="navbar-toggler"
@@ -51,18 +51,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="app.html">The App</a>
+              <a class="nav-link active" aria-current="page" href="app.html"
+                >The App</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="code.html">The Code</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="#">Git Repo</a>
+              <a class="nav-link" target="_blank" href="https://github.com/mlsherman/1Hundred">Git Repo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" target="_blank" href="#">About</a>
@@ -74,60 +74,129 @@
 
     <!-- ---- MAIN SECTION ---- -->
     <main class="flex-shrink-0">
-        <div class="container">
-            
-        </div>
-        </main>
-
-        <!-- ---- FOOTER SECTION ---- -->
-    <footer class="footer mt-auto py-3 bg-dark">
-        <div class="container-fluid">
-          <div class="row row-cols-1 row-cols-lg-3 gy-2">
-            <div class="col order-last order-lg-first text-light">
-              <div>
-                <span class="text-muted">&copy;2021</span> M Lucca |
-                msherman.dev01@gmail.com
-              </div>
-            </div>
-            <div
-              class="col d-flex align-items-center justify-content-start justify-content-lg-center"
-            >
-              <img
-                src="img/White logo - no background.svg"
-                alt="M Lucca logo"
-                height="42"
-              />
-            </div>
-            <div
-              class="col d-flex align-items-center justify-content-start justify-content-lg-end"
-            >
-              <div class="row">
-                <div class="col social">
-                  <a href="https://www.linkedin.com/in/marco-sherman-3a643823/" target="_blank"
-                    ><i class="fab fa-linkedin fa-2x"></i
-                  ></a>
+      <div class="container mt-3">
+        <div class="row row-cols-1 row-cols-lg-2 mt-5">
+          <div class="col-lg-4 col border-end border-2">
+            <h1><span class="redit">FIZZER</span> A Coding Project</h1>
+            <h4 class="lead">
+              Classic fizz buzz. 
+            </h4>
+            <h2 class="mt-5 border-bottom border-2">Instructions</h2>
+            <p>
+              Enter a Fizz number and Buzz number.
+            </p>
+          </div>
+          <div class="col-lg-8 col">
+            <div>
+              <form class="row gy-2 gx-3">
+                <div class="col">
+                  <h4>Enter a Fizz Number</h4>
+                  <input
+                    id="fizzNum"
+                    type="number"
+                    class="form-control"
+                    placeholder="Fizz Number"
+                    value="0"
+                    aria-label="Fizz Number"
+                  />
                 </div>
-                <div class="col social">
-                  <a href="https://github.com/mlsherman" target="_blank"
-                    ><i class="fab fa-github fa-2x"></i
-                  ></a>
+                <div class="col">
+                  <h4>Enter a Buzz Number</h4>
+                  <input
+                    id="buzzNum"
+                    type="number"
+                    class="form-control"
+                    placeholder="Buzz Number"
+                    value="0"
+                    aria-label="Buzz Number"
+                  />
                 </div>
-                <div class="col social">
-                  <a href="https://codepen.io/mlsherman" target="_blank"
-                    ><i class="fab fa-codepen fa-2x"></i
-                  ></a>
+                <div class="col-12 d-flex justify-content-start">
+                  <button
+                    id="btnSubmit"
+                    type="button"
+                    class="btn btn-lg button"
+                  >
+                    FIZZ BUZZ
+                  </button>
                 </div>
+              </form>
+              <h2 class="mt-5 border-bottom border-2">Results</h2>
+              <div class="table-responsive">
+                <table class="table table-striped table-sm">
+                  <tbody id="results">
+                    <!-- Results Go Here -->
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </main>
 
-      <script
+    <!-- ---- FOOTER SECTION ---- -->
+    <footer class="footer mt-auto py-3 color">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-lg-3 gy-2">
+          <div class="col order-last order-lg-first">
+            <div>
+              <span class="text-muted">&copy;2021</span> M Lucca |
+              msherman.dev01@gmail.com
+            </div>
+          </div>
+          <div
+            class="col d-flex align-items-center justify-content-start justify-content-lg-center"
+          >
+            <img
+              src="img/Black logo - no background.svg"
+              alt="M Lucca logo"
+              height="42"
+            />
+          </div>
+          <div
+            class="col d-flex align-items-center justify-content-start justify-content-lg-end"
+          >
+            <div class="row">
+              <div class="col social">
+                <a href="https://www.linkedin.com/feed/" target="_blank"
+                  ><i class="fab fa-linkedin fa-2x"></i
+                ></a>
+              </div>
+              <div class="col social">
+                <a href="https://github.com/mlsherman" target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+              </div>
+              <div class="col social">
+                <a href="https://dribbble.com/mshermandev01" target="_blank"
+                  ><i class="fab fa-codepen fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <template id="fbTemplate">
+      <tr>
+        <td></td>  <!--index 0-->
+        <td></td> 
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
     <script src="js/site.js"></script>
-    </body>
-    </html>
+    <script>
+      document.getElementById("btnSubmit").addEventListener("click", getValues)
+    </script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <title>A Coding Project M Lucca</title>
+    <title>FIZZER: A Coding Project by M Lucca</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -17,6 +17,14 @@
     />
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
 
+    <!-- GOOGLE FONT FOR RACING SANS 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/5db21ba9c6.js"
       crossorigin="anonymous"
@@ -27,15 +35,15 @@
 
   <body class="d-flex flex-column h-100">
     <!-- ---- NAV SECTION ---- -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md color fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand text-black" href="app.html"
           ><img
-            src="img/Color logo - no background.svg"
+            src="img/Black logo - no background.svg"
             class="d-inline-block align-text-top"
-            width="42"
-            height="36"
-          />APP NAME</a
+            width="26"
+            
+          /><span class="redit">FIZZER</span></a
         >
         <button
           class="navbar-toggler"
@@ -49,7 +57,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html"
                 >Home</a
@@ -62,7 +70,7 @@
               <a class="nav-link" href="code.html">The Code</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="#">Git Repo</a>
+              <a class="nav-link" target="_blank" href="">Git Repo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" target="_blank" href="#">About</a>
@@ -74,39 +82,75 @@
 
     <!-- ---- MAIN SECTION ---- -->
     <main class="flex-shrink-0">
-      <div class="container col-xxl-8 px-4 py-5">
+      <div class="container col-xxl-8">
         <div class="row g-5 py-5 row-cols-1 row-cols-lg-2">
           <div class="col order-last order-lg-first">
             <h1 class="display-5 fw-bold lh-1 mb-3">
-              APP NAME: A Coding Project
+              <span class="redit">FIZZER</span> A Coding Project
             </h1>
-            <h4 class="lead">Live life one loop at a time. A JavaScript exercise using loops. Write a program that displays the numbers from 0 t0 100. Display the even numbers in <strong>BOLD.</strong> </h4>
+            <h4 class="lead">
+              Classic fizz buzz in an attractice format. This is a JavaScript coding exercise using loops. Write a program that 
+              prints the numbers from 1 to 100 and for multiples of '3' display "Fizz" instead of the number and for multiples of '5' display "Buzz". If it is 
+              a multiple of both, display "FizzBuzz." 
+            </h4>
             <ul class="fa-ul pt-2 checklist">
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS and Bootstrap Layout</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Fundamentals</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Loops</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Functions</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Dom Manipulation</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript If/Then/Else</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Boolean Logic</li>
-             </ul>
-             <div>
-              <a type="button" class="btn btn-outline-dark btn-lg px-4 me-md-2" href="app.html">Try It Out!</a>
-             </div>
-             <h5 class="fw-bold mt-5">
+              <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span
+                >CSS and Bootstrap Layout
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span
+                >JavaScript Fundamentals
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span
+                >JavaScript Loops
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span
+                >JavaScript Functions
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span
+                >JavaScript Dom Manipulation
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span
+                >JavaScript If/Then/Else
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span
+                >JavaScript Boolean Logic
+              </li>
+            </ul>
+            <div>
+              <a
+                type="button"
+                class="btn btn-lg px-4 me-md-2"
+                href="app.html"
+                >Try It Out!</a
+              >
+            </div>
+            <h5 class="fw-bold mt-5">
               <div class="d-flex">
                 <div class="row">
                   <div class="col"><i class="fab fa-js fa-3x jsicon"></i></div>
-                  <div class="col"><i class="fab fa-bootstrap fa-3x bsicon"></i></div>
-                  <div class="col"><i class="fab fa-html5 fa-3x htmlicon"></i></div>
-                  <div class="col"><i class="fab fa-css3-alt fa-3x cssicon"></i></div>
+                  <div class="col">
+                    <i class="fab fa-bootstrap fa-3x bsicon"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fab fa-html5 fa-3x htmlicon"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fab fa-css3-alt fa-3x cssicon"></i>
+                  </div>
                 </div>
               </div>
-             </h5>
+            </h5>
           </div>
           <div class="col">
             <img
-              src="img/One Hundred+2.png"
+              src="img/Please2.svg"
               class="img-fluid center-block d-block mx-auto hundred"
               alt="App Logo"
               id="hundred"
@@ -117,10 +161,10 @@
     </main>
 
     <!-- ---- FOOTER SECTION ---- -->
-    <footer class="footer mt-auto py-3 bg-dark">
+    <footer class="footer mt-auto py-3 color">
       <div class="container-fluid">
         <div class="row row-cols-1 row-cols-lg-3 gy-2">
-          <div class="col order-last order-lg-first text-light">
+          <div class="col order-last order-lg-first">
             <div>
               <span class="text-muted">&copy;2021</span> M Lucca |
               msherman.dev01@gmail.com
@@ -130,7 +174,7 @@
             class="col d-flex align-items-center justify-content-start justify-content-lg-center"
           >
             <img
-              src="img/White logo - no background.svg"
+              src="img/Black logo - no background.svg"
               alt="M Lucca logo"
               height="42"
             />
@@ -140,7 +184,7 @@
           >
             <div class="row">
               <div class="col social">
-                <a href="https://www.linkedin.com/in/marco-sherman-3a643823/" target="_blank"
+                <a href="https://www.linkedin.com/feed/" target="_blank"
                   ><i class="fab fa-linkedin fa-2x"></i
                 ></a>
               </div>
@@ -150,7 +194,7 @@
                 ></a>
               </div>
               <div class="col social">
-                <a href="https://codepen.io/mlsherman" target="_blank"
+                <a href="https://dribbble.com/mshermandev01" target="_blank"
                   ><i class="fab fa-codepen fa-2x"></i
                 ></a>
               </div>
@@ -166,6 +210,5 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>
